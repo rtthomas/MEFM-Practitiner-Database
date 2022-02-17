@@ -12,7 +12,7 @@ Future work on the project is anticipated to include:
 - language localization
 - geographic localization (i.e. country/(state/province etc.)/city selection lists)
 
-#### Refer to the Wiki for additional information 
+ 
 
 
 

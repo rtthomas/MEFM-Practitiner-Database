@@ -1,0 +1,18 @@
+# See also client/.gitignore
+*.class
+*.jar
+src/main/resources/application.properties
+src/main/webapp/WEB-INF/classes/*
+src/main/webapp/static/
+src/main/webapp/*.json
+src/main/webapp/*.js
+src/main/webapp/*.css
+src/main/webapp/*.ico
+src/main/webapp/*.html
+.project
+.classpath
+.settings/
+build/
+target/
+
+

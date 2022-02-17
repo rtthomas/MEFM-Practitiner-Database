@@ -1,0 +1,40 @@
+
+.bold {
+    font-weight: bold
+}
+.left {
+    text-align: left
+}
+.copyright {
+    float: left;
+}
+.header {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em
+}
+.footnote {
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.8em auto;;
+    flex-direction: row;
+    max-width: 45em;
+}
+
+.action {
+    margin: 0.5em auto;
+    width: 12em;
+}
+
+@media 
+only screen and (max-width: 768px) {
+    .actions {
+        flex-direction: column;
+    }
+}

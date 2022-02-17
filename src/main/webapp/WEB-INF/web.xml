@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+    <servlet>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>ca.bc.mefm</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <!--  /rest/* -->
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Initializer</servlet-name>
+        <servlet-class>ca.bc.mefm.InitializationServlet</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>ca.bc.mefm</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <!-- This servlet handles bounced emails -->
+	<servlet>
+  		<servlet-name>bouncehandler</servlet-name>
+  		<servlet-class>ca.bc.mefm.mail.BounceHandlerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>bouncehandler</servlet-name>
+  		<url-pattern>/_ah/bounce</url-pattern>
+	</servlet-mapping>
+	<security-constraint>
+  		<web-resource-collection>
+    		<web-resource-name>bounce</web-resource-name>
+    		<url-pattern>/_ah/bounce</url-pattern>
+  		</web-resource-collection>
+  		<auth-constraint>
+    		<role-name>admin</role-name>
+ 		 </auth-constraint>
+	</security-constraint>    
+
+	<listener>  
+    	<listener-class>
+        	ca.bc.mefm.ObjectifyRegistrationContextListener
+    	</listener-class>
+	</listener>  
+
+  	<filter>
+    	<filter-name>ObjectifyFilter</filter-name>
+    	<filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+  	</filter>
+  	<filter-mapping>
+    	<filter-name>ObjectifyFilter</filter-name>
+    	<url-pattern>/*</url-pattern>
+  	</filter-mapping>
+  
+  	<welcome-file-list>
+    	<welcome-file>index.html</welcome-file>
+  	</welcome-file-list>
+</web-app>

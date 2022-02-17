@@ -1,0 +1,7 @@
+email.address.admin=robert.t.toms@gmail.com
+email.address.noreply=noreply@healthfinder4me-test.xyz
+email.address.support=support@healthfinder4me-test.xyz
+email.blocked.subject=A problem with your comment on HealthFinder4ME.org
+email.blocked.message=Dear {0},\nThank you for your input on HeatlhFinder4ME.org. Unfortunately, your comment for {1} has been flagged as inappropriate and removed.\nPlease review our guidelines, which are posted on the comments submission section of our site, and let us know if you would like to discuss further with one of our moderators.\nFor your reference, following are the guidelines for posting comments on our site:\n--------------------------\nPlease respect that this is a public site providing useful information for ME and fibromyalgia patients, not a place to "let it all out". While we want honest comments and information, the goal is to provide information about helpful health care providers, and not to provide a platform to excoriate doctors or other healthcare professionals. Moderators will remove any offending comments.\n--------------------------\nThe comment was posted on {2,date} at {2,time,short} and begins "{3}"\n--------------------------Best regards,\nHealthFinderf4ME.org Moderator
+email.comment.subject="Comment by {0} about practitioner {1} {2} has been {3}"
+datastore.load.operation=0

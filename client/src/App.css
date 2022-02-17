@@ -1,0 +1,388 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+.execute {
+	font-weight: bold;
+	cursor: -webkit-grab; 
+	cursor: grab;
+	padding-left: 0.8em;
+}
+
+.footer {
+	background-color: #2c3e50;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 2.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+}
+.footer > span {
+	cursor: -webkit-grab; 
+	cursor: grab;
+	color: white;
+	width: auto
+}
+
+.vertical-group {
+	display: flex;
+	flex-direction: column;	
+}
+.horizontal-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.bordered {
+	border: 2px solid #dce4ec;
+	border-radius: 4px;
+}
+
+/* These are for the Practitioner Information and Practitioner Evaluation fields */
+
+.info-field {
+	max-width: 15em !important;
+	width: 15em;
+	max-height: 32px;
+	min-height: 32px;
+	padding: 4px 5px;
+	border: 2px solid #dce4ec;
+	border-radius: 4px;
+	background-color: #ecf0f1;
+	color: #2c3e50;
+	margin-top: 3px;
+}
+.info-field-reg {
+	width: 13em;
+}
+
+.info-label {
+	text-align: right;
+	color: #2c3e50;
+	font-size: 15px;
+	padding-left: 0px;
+	line-height: 1.42857143;
+	margin-top: 5px;
+	margin-right: 1em;
+	width: 8em;
+}
+.info-label-reg {
+	width: 10em;
+}
+
+.info-label-group {
+	text-align: left;
+	color: #2c3e50;
+	font-size: 15px;
+	padding-left: 0px;
+	line-height: 1.42857143;
+	margin-top: 10px;
+	margin-right: 1em;
+	width: 100% !important;
+}
+.right {
+	text-align: right !important;
+}
+
+.question {
+	text-align: left !important;
+	margin-top: 0.5em;
+	padding-left: 0 !important;
+}
+
+.sidebar-container {
+	display: flex;
+}
+.sidebar-text {
+	flex-grow: 7
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+	border: 3px solid red;
+	margin-top: 1.5em;
+	margin-left: 2em;
+	margin-bottom: 2em;
+	flex-grow: 3;
+	align-self: flex-start;
+}
+.sidebar-row {
+    background-color: DarkGray;
+    border-bottom: 3px solid red;
+	padding: 0.3em 0.6em;
+	font-size: 1em;
+}
+
+.sidebar-row a {
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar-row:last-child {
+    border-bottom: none
+}
+
+a {
+	font-weight: bold
+}
+.bold {
+	font-weight: bold;
+}
+.red {
+	color: red;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+ol,ul {
+	list-style-position: outside;
+	margin-bottom: 0.3em;
+}
+.list li {
+	margin-bottom: 0.5em;
+}
+.large-text {
+	font-size: 1.1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.home {
+	max-width: 800px !important;
+}
+
+.home p {
+	margin-top: 1.1em;
+}
+.indented {
+	margin-left: 2.6em;
+}
+
+.red-header {
+	color: red;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top: 1.9em !important;
+}
+
+.question-wrapper {
+	max-width: 700px !important;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	padding: 5px;
+}
+
+.button-large {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.input-wrapper {
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-box-orient: horizontal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	align-items: center;					
+}
+.radio-group {
+    height: 30px;
+	padding: 5px 5px;
+	margin-top: 3px;
+}
+
+.comments {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.comment-header {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	border-bottom: 1px solid #dce4ec;
+	padding-bottom: 3px;
+	margin-bottom: 5px;
+}
+.comment-name {
+	font-weight: bold;
+	display: inline;
+}
+.comment-date {
+	margin-left: 1em;
+	display: inline;
+	font-size: .8em;
+	padding-top: 2px;
+}
+.comment-button {
+	font-size: .7em;
+	height: 18px;
+	margin-top: 1px;
+	padding: 0px 6px;
+}
+.comment-reply {
+	margin-left: 1em;
+}
+.comment-flag{
+	margin-left: auto;
+}
+.comment-blocked {
+	font: italic;
+}
+.new-comment {
+  overflow:hidden;
+  padding:10px;
+	width:100%;
+}
+.comment{  
+  overflow:hidden;
+  padding:2px 10px 5px 10px;
+  width:auto;  
+/*  display:inline-block;*/
+  border-radius:4px;
+	border:2px solid #dce4ec;
+	text-align: left;
+	margin: 5px;
+}
+.level2 {
+	margin-left: 4em;
+}
+
+.instructions {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	text-align: left;
+	padding: 10px;	
+}
+.error-message {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	margin: 2em auto;
+ 	border-radius:4px;
+	border:2px solid red;
+	padding: 4px;
+	color: red;
+	max-width: 42em;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;	
+}
+.spinner-container > div {
+	margin-top:30%;
+}
+
+.copy-url {
+	float: left;
+	margin-top: 10px;
+}
+
+/* Force on <a> elements without href */
+a:hover {
+	cursor: pointer;
+}
+
+/*****************************************************************************/
+/* Responsive table styles */
+table {
+  margin:auto; 
+  width: 80%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #2c3e50; 
+  color: white; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+
+@media 
+only screen and (max-width: 768px)  {
+	.question-wrapper {
+		max-width: 450px !important;
+		width: 450px;
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		padding: 0.02em;
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 20%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 65%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+	.copy-url {		
+		margin-top: 20px;
+		margin-left: 15px;
+	}
+}
+
+
+
